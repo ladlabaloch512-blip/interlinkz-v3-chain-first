@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Interlinkz</title>
+<meta name="description" content="Start a project with Interlinkz. Write to contact@interlinkz.com or use the form.">
+<link rel="icon" href="symbol-light.png">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="chat.css">
+</head>
+<body class="page-contact">
+<header class="site-header">
+<div class="wrap header-in">
+<a class="brand" href="index.html"><img src="logo-h-light.jpg" alt="Interlinkz logo"></a>
+<button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+<nav class="main-nav"><a href="index.html">Home</a><a href="services.html">Services</a><a href="portfolio.html">Portfolio</a><a href="about.html">About</a><a href="contact.html" class="active">Contact</a></nav>
+<a class="btn btn-head" href="contact.html">Start a Project</a>
+</div>
+</header>
+<main>
+<div class="contact-chainline" aria-hidden="true">
+<svg viewBox="0 0 1200 54">
+<line x1="-10" y1="27" x2="1210" y2="27" stroke="#242428" stroke-width="2.5"/>
+<g fill="#f2f2f4" stroke="#242428" stroke-width="2.5">
+<circle cx="26" cy="27" r="9"/><circle cx="112" cy="27" r="9"/>
+<circle cx="540" cy="27" r="9"/><circle cx="1150" cy="27" r="9"/>
+</g>
+<g font-family="Arial" font-size="19" fill="#242428" text-anchor="middle">
+<rect x="140" y="6" width="86" height="42" rx="21" fill="#f2f2f4" stroke="#242428" stroke-width="2.2"/>
+<text x="183" y="34">Plan</text>
+<rect x="248" y="6" width="104" height="42" rx="21" fill="#f2f2f4" stroke="#242428" stroke-width="2.2"/>
+<text x="300" y="34">Design</text>
+<rect x="374" y="6" width="88" height="42" rx="21" fill="#f2f2f4" stroke="#242428" stroke-width="2.2"/>
+<text x="418" y="34">Build</text>
+<rect x="452" y="6" width="86" height="42" rx="21" fill="#f2f2f4" stroke="#242428" stroke-width="2.2"/>
+<text x="495" y="34">Grow</text>
+</g>
+</svg>
+</div>
+<section class="wrap contact-grid">
+<div class="contact-left">
+<h1>Start a project<br>with Interlinkz.</h1>
+<div class="chainline2" aria-hidden="true">
+<svg viewBox="0 0 560 20">
+<line x1="-6" y1="10" x2="566" y2="10" stroke="#242428" stroke-width="2.5"/>
+<g fill="#f2f2f4" stroke="#242428" stroke-width="2.5">
+<circle cx="16" cy="10" r="8"/><circle cx="104" cy="10" r="8"/><circle cx="492" cy="10" r="8"/>
+</g>
+</svg>
+</div>
+<h2>Start with one link.</h2>
+<div class="dottpath" aria-hidden="true">
+<svg viewBox="0 0 330 160" style="width:320px;max-width:100%">
+<path d="M14,18 H196 V128 H284" fill="none" stroke="#FFCC01" stroke-width="4"/>
+<g fill="#FFCC01">
+<circle cx="14" cy="18" r="9"/><circle cx="196" cy="18" r="9"/>
+<circle cx="196" cy="58" r="8"/><circle cx="196" cy="128" r="9"/><circle cx="248" cy="128" r="8"/>
+</g>
+<circle cx="196" cy="94" r="8" fill="#f2f2f4" stroke="#FFCC01" stroke-width="4"/>
+<polygon points="276,117 298,128 276,139" fill="#FFCC01"/>
+</svg>
+</div>
+<div class="contact-big">
+<a href="mailto:contact@interlinkz.com">contact@interlinkz.com</a>
+<a href="https://interlinkz.com">https://interlinkz.com</a>
+</div>
+</div>
+<div class="form-box">
+<form id="contactForm">
+<label for="cf-name">Name</label>
+<input id="cf-name" name="name" type="text" required>
+<label for="cf-email">Email</label>
+<input id="cf-email" name="email" type="email" required>
+<label for="cf-service">Service</label>
+<select id="cf-service" name="service" required>
+<option value="" selected>Select (Website Development, Marketing, Branding, Business Growth)</option>
+<option>Website Development</option>
+<option>Marketing</option>
+<option>Branding</option>
+<option>Business Growth</option>
+</select>
+<label for="cf-msg">Message</label>
+<textarea id="cf-msg" name="message" required></textarea>
+<button class="send" type="submit">Send</button>
+<p class="form-note" id="formNote" hidden>Thank you. Your message is ready. You can also write to us at contact@interlinkz.com.</p>
+</form>
+</div>
+</section>
+</main>
+<footer class="site-footer" style="background:#fff">
+<div class="wrap footer-in">
+<a class="brand" href="index.html"><img src="logo-h-light.jpg" alt="Interlinkz logo"></a>
+<div class="foot-right">
+<a href="https://interlinkz.com">https://interlinkz.com</a><span class="sep">|</span>
+<a href="mailto:contact@interlinkz.com">contact@interlinkz.com</a>
+</div>
+</div>
+</footer>
+<div id="ilz-chat-root"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="anim.js" defer></script>
+<script src="chat.js" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>

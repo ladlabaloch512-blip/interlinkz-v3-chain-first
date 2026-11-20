@@ -347,3 +347,81 @@ body.page-contact #ilz-panel{bottom:166px}
 
 .tagline{flex-basis:100%;font-size:15px;font-weight:700;letter-spacing:.3px;margin:4px 0 0;color:#242428}
 .footer-in,.foot2-in{flex-wrap:wrap}
+
+/* UI/UX REVIEW ROUND 2026-11-20 (Variant 3, 63 approved items) */
+.chip{border-radius:8px}
+.demo-label{border-radius:8px}
+.ylab{color:var(--ink);font-size:14.5px;font-weight:700;letter-spacing:1.6px}
+.about3 .ylab{color:var(--ink)}
+.crumb .cy{color:inherit}
+.post-card small{color:var(--ink)}
+.faq-sign{color:var(--ink)}
+.faq-item.open .faq-sign{color:var(--y)}
+.view-demo{color:var(--ink)}
+.step-sec .get small{color:var(--ink)}
+.cards3b:before{left:0;right:0}
+.cards3:before{content:"";position:absolute;left:0;right:0;top:50%;height:2.5px;background:var(--y);z-index:0}
+.cta-box p{text-align:left}
+.covers-row{align-items:stretch}
+.covers-row:before{background:var(--y);top:50%}
+.covers-dots:before{border-top:2.5px solid #242428;left:0;right:0}
+.covers-row:before{left:0;right:0}
+.covers-dots .cover-card{display:flex;flex-direction:column;align-items:center}
+.covers-dots .cover-card p{margin-top:auto;padding-top:12px}
+.covers-dots .cover-card svg,.covers-dots .cover-card img{height:56px;width:auto}
+.detail-intro{font-size:18.5px;max-width:640px;margin-top:16px;line-height:1.55}
+.band-chain{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:28px;flex-wrap:wrap}
+.band-chain .w{font-size:24px;font-weight:700}
+.bc-conn{width:64px;height:2.5px;background:var(--ink);position:relative;flex:none}
+.bc-conn:after{content:"";position:absolute;left:50%;top:50%;width:13px;height:13px;border-radius:50%;background:var(--y);border:2px solid var(--ink);transform:translate(-50%,-50%)}
+.thin-div{height:2.5px;background:#242428;position:relative;margin:12px 0}
+.thin-div span{position:absolute;top:50%;width:13px;height:13px;border-radius:50%;background:var(--y);border:2px solid var(--ink);transform:translate(-50%,-50%)}
+.thin-div span:nth-child(1){left:18%}
+.thin-div span:nth-child(2){left:50%}
+.thin-div span:nth-child(3){left:82%}
+.art-div{margin:30px 0 6px}
+.diagram-wrap{max-width:480px}
+.pkg-chain{display:flex;align-items:center;gap:14px;margin-top:30px;flex-wrap:wrap}
+.pc-step{display:flex;align-items:center;gap:9px;font-weight:700;font-size:17px}
+.pc-node{width:15px;height:15px;border-radius:50%;background:var(--y);border:2px solid var(--ink);flex:none}
+.pc-line{flex:1;height:2.5px;background:var(--ink);min-width:30px}
+.pkg-card.pkg-mid{border-top:12px solid var(--ink)}
+.pkg-card li.has-dot:before{content:"";position:absolute;left:0;top:16px;width:8px;height:8px;border-radius:50%;background:var(--y)}
+.step-sec{position:relative;padding-left:46px;margin-top:0}
+.step-sec:before{content:"";position:absolute;left:15px;top:0;bottom:-30px;width:2.5px;background:#c9c9cd}
+.step-sec:after{content:"";position:absolute;left:8px;top:42px;width:16px;height:16px;border-radius:50%;background:var(--y);border:2px solid var(--ink)}
+.step-sec p{max-width:920px}
+.step-sec .gets{max-width:1180px}
+.post-body{max-width:860px}
+.post-hero h1{max-width:860px}
+.legal-body{max-width:860px}
+.demo-visual{max-width:880px}
+.feature-list{max-width:900px}
+.post-visual{background:var(--ink);border-radius:8px;margin:-20px -20px 14px;padding:18px;text-align:center}
+.post-visual img{width:42px;height:auto}
+.post-date{font-size:14px;color:var(--mut);margin:-2px 0 8px}
+.btn-ghost{background:#fff;border:1.5px solid var(--ink)}
+.demo-diff{font-size:14.5px;color:var(--mut);margin-top:3px}
+.cb-lab{font-size:14.5px;letter-spacing:1.6px;font-weight:700}
+.back-link{font-weight:700}
+.back-link:hover{text-decoration:underline}
+.apply-box{border:1px solid var(--line)}
+.form-box input,.form-box select,.form-box textarea{border:1.5px solid #c9c9cd;border-radius:8px;padding:12px;background:#fff}
+.form-box label{margin:18px 0 7px;font-size:16.5px}
+.form-box label:first-child{margin-top:0}
+.contact-chainline{overflow:visible}
+.contact-chainline svg{min-width:0}
+.split-next{align-items:start}
+.split-next>div:first-child h2.sec{margin-top:0}
+.start-link h2{margin-top:0}
+@media(max-width:760px){
+ .chain3 .row{flex-direction:column;gap:8px}
+ .chain3 .conn{transform:rotate(90deg)}
+ .pf-strip .in{flex-direction:column;gap:8px}
+ .pf-strip .ln{width:2px;height:22px}
+ .covers-dots .cover-card{flex:1 1 calc(50% - 11px)}
+ .band-chain{flex-direction:column;gap:8px}
+ .bc-conn{width:2.5px;height:30px}
+ .step-sec{padding-left:38px}
+ .pkg-chain{gap:8px}
+}

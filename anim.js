@@ -1,6 +1,10 @@
 /* Interlinkz animation layer. Desktop only. Everything rests visible:
    all effects use gsap.from, so with no GSAP or on mobile the page
-   shows its final state exactly as built. */
+   shows its final state exactly as built.
+   Every ScrollTrigger tween sets immediateRender: false, so nothing
+   is pre-hidden: each element sits fully visible in its final state
+   until its animation moment arrives, then plays and settles back to
+   that same visible state. */
 (function(){
   if(!window.gsap) return;
   var mq = window.matchMedia('(min-width: 1024px)');
@@ -13,7 +17,7 @@
     try{ len = el.getTotalLength(); }catch(e){}
     gsap.fromTo(el,
       {strokeDasharray: len, strokeDashoffset: len},
-      {strokeDashoffset: 0, duration: 1.4, ease: 'power2.out',
+      {strokeDashoffset: 0, duration: 1.4, ease: 'power2.out', immediateRender: false,
        scrollTrigger: {trigger: el, start: 'top 88%', once: true}});
   });
 
@@ -22,7 +26,7 @@
     var items = group.querySelectorAll('.pnode');
     if(!items.length) return;
     var tl = gsap.timeline({scrollTrigger: {trigger: group, start: 'top 88%', once: true}});
-    tl.from(items, {scale: .4, opacity: 0, transformOrigin: 'center center',
+    tl.from(items, {scale: .4, opacity: 0, transformOrigin: 'center center', immediateRender: false,
                     duration: .45, ease: 'back.out(2.2)', stagger: .14})
       .to(items, {scale: 1.22, duration: .22, ease: 'power1.inOut',
                   stagger: {each: .16, yoyo: true, repeat: 1}}, '+=0.15');
@@ -43,7 +47,7 @@
   document.querySelectorAll('[data-joins]').forEach(function(group){
     var joins = group.querySelectorAll('.join, .nl-join, .ring-join, .plan-join');
     if(!joins.length) return;
-    gsap.from(joins, {scale: 0, opacity: 0, transformOrigin: 'center center',
+    gsap.from(joins, {scale: 0, opacity: 0, transformOrigin: 'center center', immediateRender: false,
       duration: .4, ease: 'back.out(2.4)', stagger: .16,
       scrollTrigger: {trigger: group, start: 'top 88%', once: true}});
   });
